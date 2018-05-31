@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
@@ -6,7 +8,18 @@
 public class TheRiddler {
 
 	public static void main(String[] args) {
-
+		int score=0;
+		 String thisisThePassword = "Footsteps";
+		String answer=JOptionPane.showInputDialog("The more you take, the more you leave behind. What am I?");
+       
+		if(answer.equals(thisisThePassword)){
+			//correct answer
+			JOptionPane.showMessageDialog(null, "Correct!");
+		}
+		else {
+			//wrong answer
+			JOptionPane.showMessageDialog(null, "Wrong");
+		}
 		// 1. Make a variable to hold the score
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
