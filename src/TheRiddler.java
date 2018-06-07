@@ -15,11 +15,16 @@ public class TheRiddler {
 		if(answer.equals(thisisThePassword)){
 			//correct answer
 			JOptionPane.showMessageDialog(null, "Correct!");
+			score = score +1;
+			JOptionPane.showMessageDialog(null,"Congratulations, you scored " +score);
+	        
 		}
+	
 		else {
 			//wrong answer
-			JOptionPane.showMessageDialog(null, "Wrong");
+			JOptionPane.showMessageDialog(null, "Wrong, the answer is Footsteps");
 		}
+		
 		// 1. Make a variable to hold the score
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
